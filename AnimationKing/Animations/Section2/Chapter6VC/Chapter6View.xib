@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Chapter6View" customModule="AnimationKing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xjs-M0-oq9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="打包清单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ed-Ul-9s2">
+                            <rect key="frame" x="152.5" y="26.5" width="69.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR3-5W-CLo">
+                            <rect key="frame" x="337" y="14.5" width="30" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                            <state key="normal" title="+"/>
+                            <connections>
+                                <action selector="actionToggleMenu:" destination="iN0-l3-epB" eventType="touchUpInside" id="ghh-uz-aPm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Fn7-Nv-uOF"/>
+                        <constraint firstItem="rR3-5W-CLo" firstAttribute="centerY" secondItem="2Ed-Ul-9s2" secondAttribute="centerY" id="UU1-eZ-IgU"/>
+                        <constraint firstItem="2Ed-Ul-9s2" firstAttribute="centerX" secondItem="Xjs-M0-oq9" secondAttribute="centerX" id="ZoF-EK-wu6"/>
+                        <constraint firstAttribute="trailing" secondItem="rR3-5W-CLo" secondAttribute="trailing" constant="8" id="i1j-rH-7u5"/>
+                        <constraint firstItem="2Ed-Ul-9s2" firstAttribute="centerY" secondItem="Xjs-M0-oq9" secondAttribute="centerY" constant="5" id="qop-cT-E6G"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Wdj-Y3-Zmi">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="autolayoutCell" translatesAutoresizingMaskIntoConstraints="NO" id="wIV-GY-Pid">
+                    <rect key="frame" x="89" y="139" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wIV-GY-Pid" id="Nji-39-S1S">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tableViewCellContentView>
+                </tableViewCell>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Wdj-Y3-Zmi" secondAttribute="bottom" id="5dj-C3-Cye"/>
+                <constraint firstItem="Xjs-M0-oq9" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="61i-Qu-Sw3"/>
+                <constraint firstItem="Wdj-Y3-Zmi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XWm-Vs-FZu"/>
+                <constraint firstItem="Xjs-M0-oq9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="e5J-s7-wue"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wdj-Y3-Zmi" secondAttribute="trailing" id="eGW-OG-E0P"/>
+                <constraint firstItem="Wdj-Y3-Zmi" firstAttribute="top" secondItem="Xjs-M0-oq9" secondAttribute="bottom" id="mUK-1s-8dk"/>
+                <constraint firstItem="Xjs-M0-oq9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="z7y-jZ-KeL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="buttonMenu" destination="rR3-5W-CLo" id="Dbg-co-rBU"/>
+                <outlet property="tableView" destination="Wdj-Y3-Zmi" id="ZmK-fV-dPh"/>
+                <outlet property="titleLabel" destination="2Ed-Ul-9s2" id="0sU-1p-eYH"/>
+            </connections>
+            <point key="canvasLocation" x="-36" y="-362"/>
+        </view>
+    </objects>
+</document>

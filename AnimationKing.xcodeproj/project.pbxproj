@@ -13,6 +13,11 @@
 		4C416EF11F62749700AA0872 /* SnowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0CB00E1F615501005E93C1 /* SnowView.swift */; };
 		4C416EF21F627A4A00AA0872 /* FlightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0CB00D1F615501005E93C1 /* FlightData.swift */; };
 		4C416EF41F627C9600AA0872 /* Chapter4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C416EF31F627C9600AA0872 /* Chapter4View.swift */; };
+		4C475B5E1F8B88B100E3BD2B /* autolayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C475B5D1F8B88B100E3BD2B /* autolayoutCell.swift */; };
+		4C49E22D1F8B680000D15940 /* Chapter6VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C49E22C1F8B680000D15940 /* Chapter6VC.swift */; };
+		4C49E23E1F8B70E200D15940 /* Chapter6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C49E23D1F8B70E200D15940 /* Chapter6View.swift */; };
+		4C49E2401F8B70EC00D15940 /* Chapter6View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C49E23F1F8B70EC00D15940 /* Chapter6View.xib */; };
+		4C49E2421F8B7E0800D15940 /* HorizontalItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C49E2411F8B7DC700D15940 /* HorizontalItemList.swift */; };
 		4C4A00C11F53FA2000439031 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A00C01F53FA2000439031 /* AppDelegate.swift */; };
 		4C4A00C81F53FA2000439031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A00C71F53FA2000439031 /* Assets.xcassets */; };
 		4C4A00CB1F53FA2000439031 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A00C91F53FA2000439031 /* LaunchScreen.storyboard */; };
@@ -82,6 +87,11 @@
 		4C416EED1F615E7D00AA0872 /* Chapter4View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Chapter4View.xib; sourceTree = "<group>"; };
 		4C416EEF1F623B0A00AA0872 /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
 		4C416EF31F627C9600AA0872 /* Chapter4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4View.swift; sourceTree = "<group>"; };
+		4C475B5D1F8B88B100E3BD2B /* autolayoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = autolayoutCell.swift; sourceTree = "<group>"; };
+		4C49E22C1F8B680000D15940 /* Chapter6VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter6VC.swift; sourceTree = "<group>"; };
+		4C49E23D1F8B70E200D15940 /* Chapter6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter6View.swift; sourceTree = "<group>"; };
+		4C49E23F1F8B70EC00D15940 /* Chapter6View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Chapter6View.xib; sourceTree = "<group>"; };
+		4C49E2411F8B7DC700D15940 /* HorizontalItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalItemList.swift; sourceTree = "<group>"; };
 		4C4A00BD1F53FA2000439031 /* AnimationKing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationKing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4A00C01F53FA2000439031 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C4A00C71F53FA2000439031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -170,6 +180,26 @@
 			path = Chapter4VC;
 			sourceTree = "<group>";
 		};
+		4C49E22A1F8B659700D15940 /* Section2 */ = {
+			isa = PBXGroup;
+			children = (
+				4C49E2411F8B7DC700D15940 /* HorizontalItemList.swift */,
+				4C49E22B1F8B65FE00D15940 /* Chapter6VC */,
+			);
+			path = Section2;
+			sourceTree = "<group>";
+		};
+		4C49E22B1F8B65FE00D15940 /* Chapter6VC */ = {
+			isa = PBXGroup;
+			children = (
+				4C49E22C1F8B680000D15940 /* Chapter6VC.swift */,
+				4C49E23D1F8B70E200D15940 /* Chapter6View.swift */,
+				4C475B5D1F8B88B100E3BD2B /* autolayoutCell.swift */,
+				4C49E23F1F8B70EC00D15940 /* Chapter6View.xib */,
+			);
+			path = Chapter6VC;
+			sourceTree = "<group>";
+		};
 		4C4A00B41F53FA2000439031 = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +277,7 @@
 			children = (
 				4C4A01681F540F2600439031 /* GoogleAnimation */,
 				4C5E70321F5995D900153131 /* Section1 */,
+				4C49E22A1F8B659700D15940 /* Section2 */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -460,6 +491,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C49E2401F8B70EC00D15940 /* Chapter6View.xib in Resources */,
 				4C4A01981F540F2600439031 /* bg.jpeg in Resources */,
 				4C4A019A1F540F2600439031 /* menu@2x.png in Resources */,
 				4C4A01911F540F2600439031 /* 0.png in Resources */,
@@ -498,9 +530,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C49E2421F8B7E0800D15940 /* HorizontalItemList.swift in Sources */,
 				4C4A01A41F540F2600439031 /* Title.swift in Sources */,
+				4C475B5E1F8B88B100E3BD2B /* autolayoutCell.swift in Sources */,
 				4C416EF21F627A4A00AA0872 /* FlightData.swift in Sources */,
 				4C4A018D1F540F2600439031 /* Swip.swift in Sources */,
+				4C49E23E1F8B70E200D15940 /* Chapter6View.swift in Sources */,
 				4C416EF41F627C9600AA0872 /* Chapter4View.swift in Sources */,
 				4C739F661F56B46A008A24F7 /* MainTabBarController.swift in Sources */,
 				4C4A019E1F540F2600439031 /* HeaderBottom.swift in Sources */,
@@ -525,6 +560,7 @@
 				4C4A00C11F53FA2000439031 /* AppDelegate.swift in Sources */,
 				4C4A018F1F540F2600439031 /* SwipGesture.swift in Sources */,
 				4C4A01901F540F2600439031 /* Model.swift in Sources */,
+				4C49E22D1F8B680000D15940 /* Chapter6VC.swift in Sources */,
 				4C5E703B1F5ABB1000153131 /* TaskDelay-Extension.swift in Sources */,
 				4C416EF01F623B0A00AA0872 /* UIView-Extension.swift in Sources */,
 				4C4A01A31F540F2600439031 /* Line.swift in Sources */,

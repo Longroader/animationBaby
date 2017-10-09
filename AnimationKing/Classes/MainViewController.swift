@@ -23,7 +23,7 @@ class MainViewController: BaseViewController {
                                                    ["name": "4. View Animations in Practice",                         "cls": "Chapter4VC"],
                                                    ["name": "5. Keyframe",                                            "cls": "Chapter5VC"]]],
                                       ["head": "第二课：Auto Layout",
-                                       "chapter": [["name": "6. Introduction to Auto Layout",                         "cls": "Chapter1VC"],
+                                       "chapter": [["name": "6. Introduction to Auto Layout",                         "cls": "Chapter6VC"],
                                                    ["name": "7. Animating Constraints",                               "cls": "Chapter1VC"]]],
                                       ["head": "第三课：Layer Animations",
                                        "chapter": [["name": "8. Getting Started with Layer Animations",               "cls": "Chapter1VC"],
@@ -92,6 +92,9 @@ extension MainViewController {
         let cls = NSClassFromString(namespace + "." + (vcName)) as! UIViewController.Type
         let vc = cls.init()
         navigationController?.pushViewController(vc, animated: true)
+        
+//        let vc = UIStoryboard(name: "Chapter6VC", bundle: nil).instantiateInitialViewController()!
+//        navigationController?.pushViewController(vc, animated: true)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
